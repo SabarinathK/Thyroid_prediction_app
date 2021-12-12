@@ -3,10 +3,10 @@ import numpy as np
 import joblib
 
 
-appplication = Flask(__name__)
+application = Flask(__name__)
 
 
-@appplication.route('/')
+@application.route('/')
 def home():  
     return render_template('index.html')
 
