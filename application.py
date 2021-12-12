@@ -6,7 +6,7 @@ import joblib
 application = Flask(__name__)
 
 
-@application.route('/')
+@application.route('/',methods=['GET'])
 def home():  
     return render_template('index.html')
 
