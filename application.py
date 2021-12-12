@@ -30,5 +30,5 @@ def prediction():
     return render_template('after.html',data=prediction)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     application.run() 
