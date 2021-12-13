@@ -10,9 +10,9 @@ application = Flask(__name__)
 def home():  
     return render_template('index.html')
 
-@application.route("/prediction", methods=['POST'] )
+@application.route('/prediction', methods=['POST'] )
 def prediction():
-    if request.method == "POST":
+    if request.method == 'POST':
         TSH =(request.form["TSH"])
         FTI =(request.form["FTI"])
         TT4 =(request.form["TT4"])
