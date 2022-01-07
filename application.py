@@ -3,14 +3,14 @@ import numpy as np
 import joblib
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/',methods=['GET'])
+@application.route('/',methods=['GET'])
 def home():  
     return render_template('index.html')
 
-@app.route('/prediction', methods=['POST'] )
+@application.route('/prediction', methods=['POST'] )
 def prediction():
     if request.method == 'POST':
         TSH =(request.form["TSH"])
@@ -33,4 +33,4 @@ def prediction():
 
 
 if __name__ == '__main__':
-    app.run() 
+    application.run() 
